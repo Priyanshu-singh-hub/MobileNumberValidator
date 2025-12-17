@@ -15,12 +15,26 @@
 
     <script src="script.js"></script>
 
+    <style>
+        .validator-box {
+            width: 90%;
+            max-width: 360px;
+        }
+
+
+        @media (min-width: 768px) {
+            .validator-box {
+                width: 25%;
+                max-width: none;
+            }
+        }
+    </style>
 
 </head>
 
 <body class="bg-light" style="min-height: 100vh; display: flex;justify-content: center;  ">
 
-    <dl class="mt-3 w-25">
+    <dl class="mt-3 validator-box px-3">
         <dt>Your Country 🌐</dt>
         <dd class="input-group">
             <select class="form-select" onchange="CountryChange()" id="lstCountries">
